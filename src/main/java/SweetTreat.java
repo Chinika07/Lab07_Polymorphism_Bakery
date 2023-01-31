@@ -1,5 +1,6 @@
 
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
 
 public abstract class SweetTreat {
 
@@ -39,6 +40,12 @@ public abstract class SweetTreat {
     public String addFilling() {
         return "Oreo Icing";
     }
+
+    public String cakeShape() {
+        return "Every cake that we sell are circular shaped.";
+    }
+
+    public abstract LocalDate useByDate();
 
 //        public void addSweetTreat(SweetTreat sweetTreat) {
 //            this.sweetTreats.add(sweetTreat);

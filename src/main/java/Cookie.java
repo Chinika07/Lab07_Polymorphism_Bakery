@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Cookie extends SweetTreat{
 
     private String size;
@@ -19,6 +21,10 @@ public class Cookie extends SweetTreat{
 
     public int getPrice() {
       return this.price;
+    }
+
+    public LocalDate useByDate(){
+        return LocalDate.of(2023,2,18);
     }
 
 

@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class CupcakeTest {
@@ -27,6 +29,11 @@ public class CupcakeTest {
         assertThat(cupcake.sizeOfCupcakes()).isEqualTo("Mini cupcakes");
     }
 
+    @Test
+    void useByDate() {
+        assertThat(cupcake.useByDate()).isEqualTo(LocalDate.of(2023,2,7));
+
+    }
 
 
 

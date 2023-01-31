@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class CookieTest {
@@ -27,6 +29,9 @@ public class CookieTest {
     void getPrice() {
         assertThat(cookie.getPrice()).isEqualTo(4);
     }
+
+    @Test
+    void useByDate(){assertThat(cookie.useByDate()).isEqualTo(LocalDate.of(2023,2,18));}
 
 
 }

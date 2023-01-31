@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Cupcake extends SweetTreat {
 
     private String cupcakeBox;
@@ -10,6 +12,8 @@ public class Cupcake extends SweetTreat {
     }
 
     // Method
+
+    // Do I need these 2? As on the test page they are already stated in the @BeforeEach section??
     public String addCupcakeBox() {
         return "Box of six mini cupcakes"; }
 
@@ -17,6 +21,11 @@ public class Cupcake extends SweetTreat {
         return "Mini cupcakes";
     }
 
+    public void addCupcakeBox(String cupcakeBox) {
+        this.cupcakeBox.concat(cupcakeBox); } // Can't use .add to a String, only to an ArrayList, List
 
+    public LocalDate useByDate(){
+        return LocalDate.of(2023,2,7);
+    }
 
 }

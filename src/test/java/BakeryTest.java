@@ -29,7 +29,7 @@ public class BakeryTest {
         SweetTreat sweetTreat = new TieredCake("Victoria Sponge", 25, 2, 3);
         bakery.addSweetTreat(sweetTreat);
 
-        SweetTreat sweetTreat2 = new TieredCake("Bisscoff cake", 30, 4, 8);
+        SweetTreat sweetTreat2 = new TieredCake("Biscoff cake", 30, 4, 8);
             bakery.addSweetTreat(sweetTreat2);
         assertThat(bakery.countSweetTreats()).isEqualTo(2);
         }
