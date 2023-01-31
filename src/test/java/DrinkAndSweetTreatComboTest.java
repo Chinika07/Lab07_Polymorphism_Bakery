@@ -1,4 +1,6 @@
-import org.junit.jupiter.api.BeforeEach;
+import drinks.DrinkAndSweetTreatCombo;
+import sweetTreats.Cookie;
+import sweetTreats.Cupcake;
 import org.junit.jupiter.api.Test;
 
 public class DrinkAndSweetTreatComboTest {
@@ -19,7 +21,7 @@ public class DrinkAndSweetTreatComboTest {
     @Test
     public void canAddCupcakeToDrinkAndSweetTreatCombo(){
         drinkAndSweetTreatCombo = new DrinkAndSweetTreatCombo("Small vanilla milkshake with six mini cupcakes");
-        cupcake = new Cupcake("Oreo Cupcake", 8, "Box of six cupcakes", "Mini");
+        cupcake = new Cupcake("Oreo SweetTreats.Cupcake", 8, "Box of six cupcakes", "Mini");
         drinkAndSweetTreatCombo.addCupcake(cupcake);
         System.out.println(drinkAndSweetTreatCombo.getCupcakes());
     }

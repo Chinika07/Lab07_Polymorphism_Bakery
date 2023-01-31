@@ -1,3 +1,5 @@
+package sweetTreats;
+
 import java.time.LocalDate;
 
 public abstract class SweetTreat {

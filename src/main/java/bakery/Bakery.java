@@ -1,3 +1,8 @@
+package bakery;
+
+import drinks.Drink;
+import sweetTreats.SweetTreat;
+
 import java.util.ArrayList;
 
 public class Bakery {

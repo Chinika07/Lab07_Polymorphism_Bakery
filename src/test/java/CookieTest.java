@@ -1,3 +1,4 @@
+import sweetTreats.Cookie;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +13,7 @@ public class CookieTest {
 
     @BeforeEach
     void setUp() {
-        cookie = new Cookie("White Chocolate Chip Cookie", 4, "Large");
+        cookie = new Cookie("White Chocolate Chip SweetTreats.Cookie", 4, "Large");
     }
 
     @Test
@@ -37,9 +38,9 @@ public class CookieTest {
 
     @Test
     void drinkAndCookie() {
-        cookie = new Cookie("Smartie Cookie", 3, "Large");
+        cookie = new Cookie("Smartie SweetTreats.Cookie", 3, "Large");
         String result = cookie.drinks("Apple and Blackcurrent FruitShoot");
-        assertThat(result).isEqualTo("A Smartie Cookie comes with an Apple and Blackcurrent FruitShoot" +
+        assertThat(result).isEqualTo("A Smartie SweetTreats.Cookie comes with an Apple and Blackcurrent FruitShoot" +
                 " for an extra £2 ONLY!");
 
     }

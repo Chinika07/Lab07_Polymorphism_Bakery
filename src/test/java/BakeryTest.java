@@ -1,3 +1,9 @@
+import bakery.Bakery;
+import drinks.ColdDrink;
+import drinks.Drink;
+import sweetTreats.Cupcake;
+import sweetTreats.SweetTreat;
+import sweetTreats.TieredCake;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +21,7 @@ public class BakeryTest {
 
     @Test
     void canAddSweetTreat() {
-        SweetTreat sweetTreat = new Cupcake("Chocolate Cupcake",3,"Box of Four Cupcakes",
+        SweetTreat sweetTreat = new Cupcake("Chocolate SweetTreats.Cupcake",3,"Box of Four Cupcakes",
                 "Small");
         bakery.addSweetTreat(sweetTreat);
         assertThat(bakery.countSweetTreats()).isEqualTo(1);

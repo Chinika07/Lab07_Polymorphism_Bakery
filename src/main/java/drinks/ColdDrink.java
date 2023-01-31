@@ -1,3 +1,5 @@
+package drinks;
+
 import interfaces.IDrink;
 
 public class ColdDrink extends Drink implements IDrink {

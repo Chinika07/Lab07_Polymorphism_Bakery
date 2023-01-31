@@ -1,6 +1,8 @@
+package sweetTreats;
+
 import java.time.LocalDate;
 
-public class TieredCake extends SweetTreat{
+public class TieredCake extends SweetTreat {
 
     private int numberOfTiers;
     private int numberOfLayers;
