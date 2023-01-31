@@ -8,22 +8,15 @@ public class ColdDrinkTest {
     ColdDrink coldDrink;
 
     @BeforeEach
-    void setUp() { coldDrink = new ColdDrink("Flake Milkshake",7,false, false,
+    void setUp() { coldDrink = new ColdDrink("Daim Milkshake",7,false, false,
             true, 1); }
 
-//    @Test
-//    void canAddToppingsToMilkshake() {
-//        coldDrink.addToppingsToMilkshake(1);
-//        int actual = coldDrink.getNumberOfToppingsOnMilkshake();
-//        int expected = 2;
-//        assertThat(actual).isEqualTo(expected);
-//    }
 
     @Test
     void canAddToppingsToMilkshake() {
-        coldDrink.addToppingsToMilkshake(1);
+        coldDrink.addToppingsToMilkshake(2);
         int actual = coldDrink.getNumberOfToppingsOnMilkshake();
-        int expected = 2;
+        int expected = 3;
         assertThat(actual).isEqualTo(expected);
     }
 
@@ -37,9 +30,6 @@ public class ColdDrinkTest {
                 " in our combo deals!");
 
     }
-
-
-
 
 
 

@@ -1,5 +1,3 @@
-
-import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 
 public abstract class SweetTreat {
@@ -27,9 +25,6 @@ public abstract class SweetTreat {
     public void setPrice(int price) {
         this.price = price;
     }
-//    public void setTopping(String topping) {
-//        this.topping = topping;
-//    }
 
 
     // Methods

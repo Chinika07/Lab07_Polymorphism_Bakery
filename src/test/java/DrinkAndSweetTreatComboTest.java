@@ -10,8 +10,7 @@ public class DrinkAndSweetTreatComboTest {
 
     @Test
     public void canAddCookieToDrinkAndSweetTreatCombo(){
-        drinkAndSweetTreatCombo = new DrinkAndSweetTreatCombo("Large cup of freshly made Pink Lemonade " +
-                "with 4 Large cookies");
+        drinkAndSweetTreatCombo = new DrinkAndSweetTreatCombo("Freshly made Pink Lemonade with four Large cookies");
         cookie = new Cookie("Ruby Chocolate Chip Cookies", 6, "Large");
         drinkAndSweetTreatCombo.addCookie(cookie);
         System.out.println(drinkAndSweetTreatCombo.getCookies());
@@ -19,13 +18,11 @@ public class DrinkAndSweetTreatComboTest {
 
     @Test
     public void canAddCupcakeToDrinkAndSweetTreatCombo(){
-        drinkAndSweetTreatCombo = new DrinkAndSweetTreatCombo("Small vanilla milkshake with 6 mini cupcakes");
-        cupcake = new Cupcake("Oreo Cupcake", 8, "Box of six mini cupcakes", "Mini");
+        drinkAndSweetTreatCombo = new DrinkAndSweetTreatCombo("Small vanilla milkshake with six mini cupcakes");
+        cupcake = new Cupcake("Oreo Cupcake", 8, "Box of six cupcakes", "Mini");
         drinkAndSweetTreatCombo.addCupcake(cupcake);
         System.out.println(drinkAndSweetTreatCombo.getCupcakes());
     }
-
-
 
 
     }

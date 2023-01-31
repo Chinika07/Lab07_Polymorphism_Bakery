@@ -1,7 +1,5 @@
 import interfaces.IDrink;
 
-import java.time.LocalDate;
-
 public class ColdDrink extends Drink implements IDrink {
 
     private boolean kidsDrinks;

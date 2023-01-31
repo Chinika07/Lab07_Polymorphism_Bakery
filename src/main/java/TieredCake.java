@@ -11,26 +11,17 @@ public class TieredCake extends SweetTreat{
         this.numberOfLayers = numberOfLayers;
     }
 
-    // Overloading
-    public String cakeShape() {return "Every cake that we sell are circular shaped.";}
-    public String cakeShape(String message){ return "Well actually, that was a lie because, " + message + ".";}
-
-
-
     // Methods
 
     @Override
     public String addTopping() {
-        return "Whipped cream and Oreos";
+        return "Whipped Cream and Oreos";
     }
 
     public void addTiers(int numberOfTiersToAdd) { // label of what we are adding
         this.numberOfTiers += numberOfTiersToAdd;
     }
 
-//    public int numberOfLayersInCake() {
-//        return this.numberOfLayers;
-//    }
 
     public int getNumberOfTiers() {
         return numberOfTiers;
@@ -51,5 +42,11 @@ public class TieredCake extends SweetTreat{
     public LocalDate useByDate(){
         return LocalDate.of(2023,2,10);
     }
+
+    // Overloading
+    public String cakeShape() {return "Every cake that we sell are circular shaped.";}
+    public String cakeShape(String message){ return "Well actually, that was a lie because " + message + ".";}
+
+
 
 }

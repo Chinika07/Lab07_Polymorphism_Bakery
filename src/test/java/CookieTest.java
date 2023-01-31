@@ -37,7 +37,7 @@ public class CookieTest {
 
     @Test
     void drinkAndCookie() {
-        cookie = new Cookie("Smartie Cookie", 2, "Large");
+        cookie = new Cookie("Smartie Cookie", 3, "Large");
         String result = cookie.drinks("Apple and Blackcurrent FruitShoot");
         assertThat(result).isEqualTo("A Smartie Cookie comes with an Apple and Blackcurrent FruitShoot" +
                 " for an extra £2 ONLY!");

@@ -11,7 +11,8 @@ public class CupcakeTest {
 
     @BeforeEach
     void setUp() {
-        cupcake = new Cupcake("Lemon Drizzle", 4,"Box of Four Large Cupcakes", "Large");
+        cupcake = new Cupcake("Lemon Drizzle", 4,"Box of Four Cupcakes",
+                "Large");
     }
 
     @Test
@@ -21,12 +22,12 @@ public class CupcakeTest {
 
     @Test
     void addCupcakeBox() {
-        assertThat(cupcake.addCupcakeBox()).isEqualTo("Box of six mini cupcakes");
+        assertThat(cupcake.addCupcakeBox()).isEqualTo("Box of Six Mini Cupcakes");
     }
 
     @Test
     void sizeOfCupcakes() {
-        assertThat(cupcake.sizeOfCupcakes()).isEqualTo("Mini cupcakes");
+        assertThat(cupcake.sizeOfCupcakes()).isEqualTo("Mini Cupcakes");
     }
 
     @Test
@@ -37,11 +38,11 @@ public class CupcakeTest {
 
     @Test
     void drinkAndCupcake() {
-        cupcake = new Cupcake("Dark chocolate cupcakes", 4, "Box of 2 Cupcakes",
+        cupcake = new Cupcake("Dark Chocolate Cupcakes", 4, "Box of Two Cupcakes",
                 "Large");
         String result = cupcake.drinks("Vanilla Milkshake");
-        assertThat(result).isEqualTo("Dark chocolate cupcakes comes with a Vanilla Milkshake " +
-                "which will be £7 in total");
+        assertThat(result).isEqualTo("Dark Chocolate Cupcakes come with a Vanilla Milkshake " +
+                "which will be £7 in total.");
     }
 
 

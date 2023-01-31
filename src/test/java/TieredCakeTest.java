@@ -17,7 +17,7 @@ public class TieredCakeTest {
 
     @Test
     void canAddTopping() {
-        assertThat(tieredCake.addTopping()).isEqualTo("Whipped cream and Oreos");
+        assertThat(tieredCake.addTopping()).isEqualTo("Whipped Cream and Oreos");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class TieredCakeTest {
         tieredCake.addTiers(1);      // Act
         int actual = tieredCake.getNumberOfTiers();
         int expected = 4;
-        assertThat(actual).isEqualTo(expected);
+        assertThat(actual).isEqualTo(expected); // Assert
     }
 
     @Test
@@ -47,7 +47,7 @@ public class TieredCakeTest {
 
     @Test
     public void cakeShape__withArgument() {
-        String expected = "Well actually, that was a lie because, that tiered cake in the window is square shaped.";
+        String expected = "Well actually, that was a lie because that tiered cake in the window is square shaped.";
         assertThat(tieredCake.cakeShape("that tiered cake in the window is square shaped")).isEqualTo(expected);
     }
 

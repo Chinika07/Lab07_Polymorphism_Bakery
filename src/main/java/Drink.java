@@ -1,6 +1,3 @@
-import interfaces.IDrink;
-
-import java.time.LocalDate;
 
 public abstract class Drink {
 

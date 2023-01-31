@@ -15,23 +15,19 @@ public class Cupcake extends SweetTreat implements IDrink {
 
     // Method
 
-    // Do I need these 2? As on the test page they are already stated in the @BeforeEach section??
     public String addCupcakeBox() {
-        return "Box of six mini cupcakes"; }
+        return "Box of Six Mini Cupcakes"; }
 
     public String sizeOfCupcakes() {
-        return "Mini cupcakes";
+        return "Mini Cupcakes";
     }
-
-//    public void addCupcakeBox(String cupcakeBox) {
-//        this.cupcakeBox.concat(cupcakeBox); } // Can't use .add to a String, only to an ArrayList, List
 
     public LocalDate useByDate(){
         return LocalDate.of(2023,2,7);
     }
 
     public String drinks(String nameOfDrink){
-        return this.name + " comes with a " + nameOfDrink + " which will be £7 in total";
+        return this.name + " come with a " + nameOfDrink + " which will be £7 in total.";
     }
 
 }
