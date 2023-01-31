@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -35,10 +36,19 @@ public class BakeryTest {
         }
 
 
+    @Test
+    void canAddDrink(){
+        Drink drink = new ColdDrink("Reese's Milkshake",6,false,false,true);
+        bakery.addDrink(drink);
+        assertThat(bakery.countDrinks()).isEqualTo(1);
+        }
 
 
 
-    }
+
+        }
+
+
 
 
 
