@@ -38,7 +38,8 @@ public class BakeryTest {
 
     @Test
     void canAddDrink(){
-        Drink drink = new ColdDrink("Reese's Milkshake",6,false,false,true);
+        Drink drink = new ColdDrink("Reese's Milkshake",6,false,false,true,
+                1);
         bakery.addDrink(drink);
         assertThat(bakery.countDrinks()).isEqualTo(1);
         }

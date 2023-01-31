@@ -39,8 +39,8 @@ public class CupcakeTest {
     void drinkAndCupcake() {
         cupcake = new Cupcake("Dark chocolate cupcakes", 4, "Box of 2 Cupcakes",
                 "Large");
-        String result = cupcake.drinks("Mango and Pineapple Smoothie");
-        assertThat(result).isEqualTo("Dark chocolate cupcakes comes with a Mango and Pineapple Smoothie " +
+        String result = cupcake.drinks("Vanilla Milkshake");
+        assertThat(result).isEqualTo("Dark chocolate cupcakes comes with a Vanilla Milkshake " +
                 "which will be £7 in total");
     }
 

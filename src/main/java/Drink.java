@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public abstract class Drink {
 
-    private String name;
-    private int price;
+    protected String name;
+    protected int price;
 
     public Drink(String name, int price){
         this.name = name;
@@ -31,6 +31,9 @@ public abstract class Drink {
     }
 
     // Methods
+    public String addToppingToMilkshake(){
+        return "Chocolate Flake";
+    }
 
 
 }

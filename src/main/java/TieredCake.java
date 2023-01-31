@@ -24,8 +24,6 @@ public class TieredCake extends SweetTreat{
         return "Whipped cream and Oreos";
     }
 
-
-    // Do I need to test these 2? As on the test page they are already stated in the @BeforeEach section??
     public void addTiers(int numberOfTiersToAdd) { // label of what we are adding
         this.numberOfTiers += numberOfTiersToAdd;
     }
