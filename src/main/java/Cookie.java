@@ -1,6 +1,8 @@
+import interfaces.IDrink;
+
 import java.time.LocalDate;
 
-public class Cookie extends SweetTreat{
+public class Cookie extends SweetTreat implements IDrink {
 
     private String size;
 
@@ -24,7 +26,11 @@ public class Cookie extends SweetTreat{
     }
 
     public LocalDate useByDate(){
-        return LocalDate.of(2023,2,18);
+        return LocalDate.of(2023,2,12);
+    }
+
+    public String drinks(String nameOfDrink){
+        return this.name + "comes with " + nameOfDrink + "for an extra £2 ONLY!";
     }
 
 

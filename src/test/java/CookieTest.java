@@ -31,7 +31,8 @@ public class CookieTest {
     }
 
     @Test
-    void useByDate(){assertThat(cookie.useByDate()).isEqualTo(LocalDate.of(2023,2,18));}
+    void useByDate(){assertThat(cookie.useByDate()).isEqualTo(LocalDate.of(2023,2,12));}
+
 
 
 }

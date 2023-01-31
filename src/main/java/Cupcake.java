@@ -1,6 +1,8 @@
+import interfaces.IDrink;
+
 import java.time.LocalDate;
 
-public class Cupcake extends SweetTreat {
+public class Cupcake extends SweetTreat implements IDrink {
 
     private String cupcakeBox;
     private String cupcakeSize;
@@ -26,6 +28,11 @@ public class Cupcake extends SweetTreat {
 
     public LocalDate useByDate(){
         return LocalDate.of(2023,2,7);
+    }
+
+    @Override
+    public String drinks(String nameOfDrink){
+        return this.name + "comes with " + nameOfDrink + "which will be £10 in total";
     }
 
 }
