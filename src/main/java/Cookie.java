@@ -30,7 +30,7 @@ public class Cookie extends SweetTreat implements IDrink {
     }
 
     public String drinks(String nameOfDrink){
-        return this.name + "comes with " + nameOfDrink + "for an extra £2 ONLY!";
+        return "A " + this.name + " comes with an " + nameOfDrink + " for an extra £2 ONLY!";
     }
 
 

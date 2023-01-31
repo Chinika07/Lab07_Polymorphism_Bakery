@@ -23,16 +23,15 @@ public class Cupcake extends SweetTreat implements IDrink {
         return "Mini cupcakes";
     }
 
-    public void addCupcakeBox(String cupcakeBox) {
-        this.cupcakeBox.concat(cupcakeBox); } // Can't use .add to a String, only to an ArrayList, List
+//    public void addCupcakeBox(String cupcakeBox) {
+//        this.cupcakeBox.concat(cupcakeBox); } // Can't use .add to a String, only to an ArrayList, List
 
     public LocalDate useByDate(){
         return LocalDate.of(2023,2,7);
     }
 
-    @Override
     public String drinks(String nameOfDrink){
-        return this.name + "comes with " + nameOfDrink + "which will be £10 in total";
+        return this.name + " comes with a " + nameOfDrink + " which will be £7 in total";
     }
 
 }

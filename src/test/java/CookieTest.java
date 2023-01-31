@@ -33,6 +33,15 @@ public class CookieTest {
     @Test
     void useByDate(){assertThat(cookie.useByDate()).isEqualTo(LocalDate.of(2023,2,12));}
 
+    @Test
+    void drinkAndCookie() {
+        cookie = new Cookie("Smartie Cookie", 2, "Large");
+        String result = cookie.drinks("Apple and Blackcurrent FruitShoot");
+        assertThat(result).isEqualTo("A Smartie Cookie comes with an Apple and Blackcurrent FruitShoot" +
+                " for an extra £2 ONLY!");
+
+    }
+
 
 
 }

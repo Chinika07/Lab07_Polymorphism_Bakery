@@ -20,6 +20,11 @@ public class DrinkAndSweetTreatCombo {
         return cookies;
     }
 
+    public void addCupcake(IDrink cupcakes) {this.cupcakes.add(cupcakes);}
+    public List<IDrink> getCupcakes(){
+        return cupcakes;
+    }
+
 
 
 
